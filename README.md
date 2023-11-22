@@ -37,7 +37,8 @@ I may modify this to work with a wayland equivalent of xrandr.
 
 ```bash
 
-# Download the shell script or clone this repository and make it executable using your download path.
+# Download the shell script or clone this repository
+# Make it executable using your download path.
 
 #Example:
 sudo chmod +x ~/Downloads/linux_steam_gamma.sh
@@ -47,11 +48,14 @@ sudo chmod +x ~/Downloads/linux_steam_gamma.sh
 # Execute it
 sudo ~/Downloads/linux_steam_gamma.sh
 
-# If needed, change --gamma again on the appropriate line, and execute as necessary to adjust.
+# If needed, change --gamma again on the appropriate line.
+# Execute as necessary to adjust.
 
 ```
 
 ## Usage
+Adjust it.
+
 Execute it.
 
 Copy the provided output to app/game -> properties -> general -> launch options.
