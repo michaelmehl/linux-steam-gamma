@@ -46,7 +46,7 @@ sudo chmod +x ~/Downloads/linux_steam_gamma.sh
 #Change the --gamma switch to your preference on lines #48 and #59
 
 # Execute it
-sudo ~/Downloads/linux_steam_gamma.sh
+~/Downloads/linux_steam_gamma.sh
 
 # If needed, change --gamma again on the appropriate line.
 # Execute as necessary to adjust.
