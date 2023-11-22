@@ -29,7 +29,8 @@ I may modify this to work with a wayland equivalent of xrandr.
 
     1: Checks which distribution and installs xrandr.
     2: Checks current user and the active output via xrandr.
-    3: Creates two scripts, open and close.sh with included xrandr commands derived from active output in flatpack steam path.
+    3: Creates two scripts, open and close.sh with included xrandr commands derived from active 
+    output in flatpack steam path.
     4: Generates a launch option for the user to copy paste for the application.
     
 ## Installation
@@ -46,7 +47,7 @@ sudo chmod +x ~/Downloads/linux_steam_gamma.sh
 # Execute it
 sudo ~/Downloads/linux_steam_gamma.sh
 
-# If needed, change --gamma again on the appropriate line, and execute as necessary to adjust your gamma.
+# If needed, change --gamma again on the appropriate line, and execute as necessary to adjust.
 
 ```
 
