@@ -1,5 +1,5 @@
 #!/bin/bash
-# Please edit --gamma to your prefence below.
+# Please edit --gamma to your preference below.
 # This script is for flatpack steam game install locations. Execute it as your regular user account.
 # Install xrandr via distro package manager.
 # Check if the system is running a Debian-based distribution.
