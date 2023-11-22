@@ -2,10 +2,9 @@
 
 ## Description
 
-A solution to address steam applications or games on linux where gamma sliders do not work correctly. Example issues and causation here:
+A solution to address steam applications or games on linux where gamma sliders do not work correctly. 
 
-https://github.com/doitsujin/dxvk/issues/3291
-https://docs.cryengine.com/display/CRYAUTOGEN/CONSOLEPREFIXR#AnchorRGAMMA
+[Crytek application gamma slider doesn't work.](https://docs.cryengine.com/display/CRYAUTOGEN/CONSOLEPREFIXR#AnchorRGAMMA)
 
 ## Table of Contents
 
@@ -17,8 +16,8 @@ https://docs.cryengine.com/display/CRYAUTOGEN/CONSOLEPREFIXR#AnchorRGAMMA
 - [License](#license)
 
 ## Requirements
-X11
-Flatpack Steam
+- X11
+- Flatpack Steam
 
 This solution has only been tested on POP!_OS and Fedora. 
 
@@ -42,12 +41,17 @@ I may modify this to work with a wayland equivalent of xrandr.
 #Example:
 sudo chmod +x ~/Downloads/linux_steam_gamma.sh
 
+#Change the --gamma switch to your preference on lines #48 and #59
+
 # Execute it
 sudo ~/Downloads/linux_steam_gamma.sh
+
+# If needed, change --gamma again on the appropriate line, and execute as necessary to adjust your gamma.
 
 ```
 
 ## Usage
+Execute it.
 
 Copy the provided output to app/game -> properties -> general -> launch options.
 
@@ -56,9 +60,9 @@ If you already have modifications, take care to not overwrite, but append.
 ## Contributing
 
 1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch`.
-3. Make your changes and commit: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature-branch`.
+2. Create a new branch.
+3. Make your changes and commit.
+4. Push to the branch.
 5. Submit a pull request.
 
 This project is licensed under the [MIT License](LICENSE).
