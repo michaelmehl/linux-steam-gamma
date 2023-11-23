@@ -44,8 +44,6 @@ I may modify this to work with a wayland equivalent of xrandr.
 #Example:
 sudo chmod +x ~/Downloads/linux_steam_gamma.sh
 
-#Change the --gamma switch to your preference on lines #48 and #59
-
 # Execute it
 ~/Downloads/linux_steam_gamma.sh
 
