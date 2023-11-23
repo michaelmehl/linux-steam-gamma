@@ -1,8 +1,6 @@
 #!/bin/bash
-# Please edit --gamma to your preference below.
-# This script is for flatpack steam game install locations. Execute it as your regular user account.
-# Install xrandr via distro package manager.
-# Check if the system is running a Debian-based distribution.
+# Check and if needed install xrandr via distro package manager.
+
 if ! command -v xrandr &> /dev/null; then
     echo "xrandr is not installed. Installing it..."
 
@@ -34,7 +32,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-# Define the user with directory path and gamma script names.
+# Define the user gamma preference.
 echo "Enter a desktop gamma setting (e.g. '1.00:1.00:1.00') Press Enter to use this setting."
 read -p "Desktop Gamma: " d_gamma
 

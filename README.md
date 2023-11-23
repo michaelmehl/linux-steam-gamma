@@ -30,8 +30,8 @@ I may modify this to work with a wayland equivalent of xrandr.
         https://www.x.org/releases/X11R7.5/doc/man/man1/xrandr.1.html
     3: Checks which version of Steam is installed.
     4: Checks active output via xrandr and asks user what gamma preferences they want.
-    5: Creates two scripts, gamma_open.sh and gamma_close.sh with included xrandr commands derived from active 
-        output in steam path.
+    5: Creates two scripts, gamma_open.sh and gamma_close.sh with included xrandr 
+        commands derived from active output in steam path.
     6: Generates a launch option for the user to copy paste for the application.
     
 ## Installation
@@ -49,7 +49,6 @@ sudo chmod +x ~/Downloads/linux_steam_gamma.sh
 # Execute it
 ~/Downloads/linux_steam_gamma.sh
 
-# If needed, change --gamma again on the appropriate line.
 # Execute as necessary to adjust.
 
 ```
