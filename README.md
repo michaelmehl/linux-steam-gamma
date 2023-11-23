@@ -16,10 +16,8 @@ A solution to address steam applications or games on linux where gamma sliders d
 - [License](#license)
 
 ## Requirements
-- X11
-- Flatpack Steam
 
-This solution has only been tested on POP!_OS and Fedora. 
+- X11
 
 Like any good steward of a system, take and test a backup prior to running this script.
 
@@ -27,11 +25,14 @@ I may modify this to work with a wayland equivalent of xrandr.
 
 ## Features
 
-    1: Checks which distribution and installs xrandr.
-    2: Checks current user and the active output via xrandr.
-    3: Creates two scripts, open and close.sh with included xrandr commands derived from active 
-    output in flatpack steam path.
-    4: Generates a launch option for the user to copy paste for the application.
+    1: Checks if xrandr is installed.
+    2: Checks which distribution and installs xrandr.
+        https://www.x.org/releases/X11R7.5/doc/man/man1/xrandr.1.html
+    3: Checks which version of Steam is installed.
+    4: Checks active output via xrandr and asks user what gamma preferences they want.
+    5: Creates two scripts, gamma_open.sh and gamma_close.sh with included xrandr commands derived from active 
+        output in steam path.
+    6: Generates a launch option for the user to copy paste for the application.
     
 ## Installation
 
@@ -56,7 +57,7 @@ sudo chmod +x ~/Downloads/linux_steam_gamma.sh
 ## Usage
 Adjust it.
 
-Execute it.
+Execute it. You may need to adjust which active output is set in the script if you have multiple montiors.
 
 Copy the provided output to app/game -> properties -> general -> launch options.
 
