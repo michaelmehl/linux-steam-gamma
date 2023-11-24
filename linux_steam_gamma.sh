@@ -32,17 +32,20 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-# Define the user gamma preference.
-echo "Enter a desktop gamma setting (e.g. '1.00:1.00:1.00') Press Enter to use this setting."
+# Define gamma preferences
+# Use default values on no input
+echo "Enter a desktop gamma setting (e.g. '1') Press Enter to use this setting."
 read -p "Desktop Gamma: " d_gamma
 
-echo "Enter your application gamma setting (e.g. '1.20:1.20:1.20'). Press Enter to use this setting."
+if [[ -z "$d_gamma" ]]; then
+    d_gamma="1"
+fi
+
+echo "Enter your application gamma setting (e.g. '1.20'). Press Enter to use this setting."
 read -p "Application Gamma: " a_gamma
 
-if [[ -z "$d_gamma" && -z "$a_gamma" ]]; then
-    # Use default gamma settings
-    d_gamma="1.00:1.00:1.00"
-    a_gamma="1.20:1.20:1.20"
+if [[ -z "$a_gamma" ]]; then
+    a_gamma="1.20"
 fi
 
 active_output=$(xrandr --query | awk '/ connected/ && / primary/ {print $1}')
